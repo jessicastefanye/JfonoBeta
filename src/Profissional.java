@@ -1,4 +1,5 @@
 public class Profissional {
+    int id;
     String nome;
-    Number telefone;
+    String telefone;
 }
