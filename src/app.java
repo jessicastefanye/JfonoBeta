@@ -1,15 +1,22 @@
 public class app {
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello, Fono");
-        Exercicio ex = new Exercicio();
-        ex.nome = "kiko";
-        ex.descricao = "exercicio de aquecimento, imitando o kiko com a lingua vibrando";
-        ex.tempoMin = 3;
-        ex.som = "src/sons/somKiko";
+    public class Exercicio {
+        String nome;
+        String descricao;
+        String instrucao; // Adicionei 'instrucao' porque parece ser o terceiro argumento
+        String tempoMin;
+    
+        public Exercicio(String nome, String descricao, String instrucao, String tempoMin) {
+            this.nome = nome;
+            this.descricao = descricao;
+            this.instrucao = instrucao;
+            this.tempoMin = tempoMin;
+        }
+    
+        // ... outros métodos da classe
+    }
+        
 
-       Exercicio ex1 = new Exercicio();
-       ex1.nome = "abelha";
-       ex1.descricao ="relaxamento";
+      
 
        Exercicio ex2= new Exercicio();
        ex2.nome = "Articulação";
